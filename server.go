@@ -16,6 +16,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(string(dump))
 	fmt.Fprintf(w, "<html><body>hello</body></html>\n")
 }
+
 func main() {
 	http.HandleFunc("/", handler)
 	log.Println("start http listening :18888")
