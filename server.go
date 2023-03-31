@@ -20,5 +20,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)
 	log.Println("start http listening :18888")
-	log.Println(http.ListenAndServe(":18888", nil))
+	log.Println(http.ListenAndServe("localhost:18888", nil))
 }
